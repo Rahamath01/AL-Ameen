@@ -1,0 +1,24 @@
+#two
+{
+    height: 150px;
+    background-color: lightsalmon;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+    margin-left: 30px;
+}
+#two:hover
+{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+#three
+{
+    height: 130px;
+    border-radius: 25px;
+    width: 50%;
+}
+a
+{
+  text-decoration: none;
+}

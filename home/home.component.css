@@ -1,0 +1,52 @@
+img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h6
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+#f
+{
+    transition: 0.3s ease-in-out;
+}
+#f:hover
+{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+#one
+{
+    height: 130px; 
+    background-color: rgb(255, 240, 240);
+}
+h5
+{
+    text-align: center
+}
+#two
+{
+    height: 150px;
+    background-color: lightsalmon;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+}
+#two:hover
+{
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+#three
+{
+    height: 130px;
+    border-radius: 25px;
+}
+a
+{
+  text-decoration: none;
+}

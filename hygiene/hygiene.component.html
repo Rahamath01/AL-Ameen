@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-body" >
+        <img src="../../../assets/oil.jpg" class="img-fluid" alt="..." style="margin-left: 150px; ">
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-2" style="margin-top: 20px;  " >
+            <div class="col" *ngFor="let sai of oilArray "  >
+              <div class="card">
+                <img src="{{sai.img}}" class="card-img-top" alt="... " style="height: 150px; width: 150px; margin-left: 20%; margin-top: 10px; ">
+                <div class="card-body">
+                  <h6 class="card-title">{{sai.name}}</h6>
+                  <strong>price:</strong><p>₹ {{sai.amt}}</p>
+                </div>
+                <div style="margin-left: 35%;">
+                    <button type="button" class="btn" (click)="dec(sai)"><i class="fa-solid fa-minus"></i></button>
+                    <span>{{sai.qty}}</span>
+                    <button type="button" class="btn" (click)="inc(sai)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <button type="button" class="btn btn-primary" >Add to cart</button> 
+              </div>
+            </div>
+    </div>
+  </div>
+
+

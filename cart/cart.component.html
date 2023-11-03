@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-body" style="text-align: center;">
+      <h1>Cart</h1>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">S.no</th>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">MRP</th>
+            <th scope="col">Quantity</th>
+            <th>Sub:Total</th>
+            <th>Delete Item</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let details of getcartdetails , let i = index;">
+            <th>{{i+1}}</th>
+            <td><img src="{{details.img}}" alt="" style="width: 100px; height: 100px;"></td >
+            <td>{{details.name}}</td>
+            <td>{{details.amt}}</td>
+            <td>{{details.qty}}</td>
+            <td>{{details.qty * details.amt | number}}</td>
+            <td><button (click)="delete(details.saiId)"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button></td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Total :- {{total}}</th>
+          </tr>
+        </thead>
+      </table>
+  </div>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end"><a href="/submit">
+    <button class="btn btn-success me-md-2" type="button">Submit</button>
+  </a>
+  </div>
